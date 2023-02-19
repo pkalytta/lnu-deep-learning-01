@@ -41,6 +41,8 @@ class TrainerCNN:
         model = get_model(num_classes=num_classes, lr=self.learning_rate,
                           image_width=image_width, image_height=image_height)
 
+        model.summary()
+
         # train model
         history = model.fit(
             training_set,

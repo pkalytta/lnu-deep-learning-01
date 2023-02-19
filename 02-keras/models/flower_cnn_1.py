@@ -17,7 +17,7 @@ class FlowerCNN(tf.keras.Model):
         ])
 
         self.num_classes = num_classes
-        self.max_pool = layers.MaxPooling2D()
+        self.max_pool = layers.MaxPooling2D(pool_size=(2, 2), padding="same")
 
         self.conv1 = layers.Conv2D(16, 3, padding='same', activation='relu')
         self.conv2 = layers.Conv2D(32, 3, padding='same', activation='relu')
