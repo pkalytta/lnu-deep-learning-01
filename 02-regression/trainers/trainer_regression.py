@@ -43,8 +43,8 @@ class TrainerRegression:
         )
 
         # show one of the input vectors
-        x_1 = pd.DataFrame(x_test).iloc[0]
-        print(x_1)
+        #x_1 = pd.DataFrame(x_test).iloc[0]
+        #print(x_1)
 
         # Make a prediction (miles per gallon)
         #        cyl disp horsepower weight accel modelyear europe japan usa
